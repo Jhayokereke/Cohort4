@@ -2,14 +2,8 @@
 
 namespace OOP
 {
-    public class PlaneShape
+    public abstract class PlaneShape
     {
-        public PlaneShape(int height, int width)
-        {
-            Height = height;
-            Width = width;
-            Area = Height * Width;
-        }
         private int _height;
         public int Height 
         {

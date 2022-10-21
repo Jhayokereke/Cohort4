@@ -6,18 +6,12 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Circle circle = new Circle(7);
+            MathematicsOperations mathOp = new MathematicsOperations();
 
-            Console.WriteLine($"The circle with radius {circle.Radius} has a Diameter of {circle.Diameter}, a circumference of {circle.Circumference} and area of {circle.Area}.");
+            int result = mathOp.Add(4, 5, new int[] {2, 3, 4, 6, 11});
 
-            Console.WriteLine("Changing radius value....");
-            Console.Write("Radius: ");
-            string newRadius = Console.ReadLine();
-            Console.WriteLine("New radius value is {0}", newRadius);
-            circle.Radius = int.Parse(newRadius);
+            Console.WriteLine(result);
 
-            Console.WriteLine($"The circle with radius {circle.Radius} has a Diameter of {circle.Diameter}, a circumference of {circle.Circumference} and area of {circle.Area}.");
-            Console.WriteLine("Goodbye!");
         }
     }
 }
