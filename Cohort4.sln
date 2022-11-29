@@ -5,7 +5,11 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{927A6F06-B01B-452F-93E7-BA7DE95612A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRecordApp", "SportRecordApp\SportRecordApp.csproj", "{3F9DFC74-1476-4612-BE64-08874BBA3EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRecordApp", "SportRecordApp\SportRecordApp.csproj", "{3F9DFC74-1476-4612-BE64-08874BBA3EE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRecordLibrary", "SportRecordLibrary\SportRecordLibrary.csproj", "{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRecordAppWinForm", "SportRecordAppWinForm\SportRecordAppWinForm.csproj", "{11590040-185E-4E99-B118-3E9E75EB4352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3F9DFC74-1476-4612-BE64-08874BBA3EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9DFC74-1476-4612-BE64-08874BBA3EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F9DFC74-1476-4612-BE64-08874BBA3EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11590040-185E-4E99-B118-3E9E75EB4352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11590040-185E-4E99-B118-3E9E75EB4352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11590040-185E-4E99-B118-3E9E75EB4352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11590040-185E-4E99-B118-3E9E75EB4352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

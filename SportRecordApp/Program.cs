@@ -1,4 +1,4 @@
-﻿using SportRecordApp;
+﻿using SportRecordLibrary;
 
 Console.WriteLine("Welcome to our app....");
 
