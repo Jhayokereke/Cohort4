@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace OOP
 {
@@ -6,23 +9,34 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            int numerator = 1800;
-            int divisor = 100;
-            int quotient = numerator / divisor;
-            int remainder = numerator % divisor;
-            Console.WriteLine($"{numerator} divided by {divisor} gives us {quotient} remainder {remainder}");
-            
-            //1234 + 99 = 1333 / 100 = 13;
-            //1800 + 99 = 1899 / 100 = 18;
-            //3467 + 99 = 3566 / 100 = 35;
-            int[] years = new int[] { 1234, 1800, 3467, 235, 1888, 1960, 2020, 2021, 2037, 1405, 1914, 1287 };
-            for (int i = 0; i < years.Length; i++)
-            {
-                Console.WriteLine();
-                int year = years[i];
-                int century = Kata.СenturyFromYear(year);
-                Console.WriteLine($"The year {year} falls into the {century} century.");
-            }
+            SortedSet<int> set = new SortedSet<int>();
+            set.Add(5);
+            set.Add(2);
+            set.Add(3);
+            set.Add(6);
+            set.Add(1);
+            set.Add(4);
+            set.Add(5);
+
+            Console.WriteLine(set.Count);
+
+            Console.WriteLine("[" + string.Join(", ", set) + "]");
+
+            var newSet = set.Where(GreaterThan);
+            Console.WriteLine(newSet.Count());
+        }
+
+        static bool GreaterThan(int x)
+        {
+            return x > 5;
         }
     }
 }
+//1, 2, 3,4 ,5 ,6 ,7
+//Arrays => type safe, do not change size
+//arraylist => not type safe, change size
+//Lists => type safe, change size
+//hashtable => k:v
+//dictionaries => 
+//hashsets => 
+//sortedsets =>
