@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRecordApp", "SportRecordApp\SportRecordApp.csproj", "{3F9DFC74-1476-4612-BE64-08874BBA3EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRecordLibrary", "SportRecordLibrary\SportRecordLibrary.csproj", "{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRecordLibrary", "SportRecordLibrary\SportRecordLibrary.csproj", "{ED4A336B-EB31-4A40-8EAB-D7DF76F136BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRecordAppWinForm", "SportRecordAppWinForm\SportRecordAppWinForm.csproj", "{11590040-185E-4E99-B118-3E9E75EB4352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRecordAppWinForm", "SportRecordAppWinForm\SportRecordAppWinForm.csproj", "{11590040-185E-4E99-B118-3E9E75EB4352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDemo", "EventDemo\EventDemo.csproj", "{604B647B-638E-4D9E-846B-641979459333}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{11590040-185E-4E99-B118-3E9E75EB4352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11590040-185E-4E99-B118-3E9E75EB4352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11590040-185E-4E99-B118-3E9E75EB4352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604B647B-638E-4D9E-846B-641979459333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604B647B-638E-4D9E-846B-641979459333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604B647B-638E-4D9E-846B-641979459333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604B647B-638E-4D9E-846B-641979459333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

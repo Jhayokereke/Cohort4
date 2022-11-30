@@ -36,11 +36,15 @@
             // 
             this.RecordTable_dtgrd.AllowUserToAddRows = false;
             this.RecordTable_dtgrd.AllowUserToDeleteRows = false;
-            this.RecordTable_dtgrd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.RecordTable_dtgrd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RecordTable_dtgrd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RecordTable_dtgrd.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.RecordTable_dtgrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.RecordTable_dtgrd.Location = new System.Drawing.Point(24, 63);
             this.RecordTable_dtgrd.Name = "RecordTable_dtgrd";
+            this.RecordTable_dtgrd.ReadOnly = true;
             this.RecordTable_dtgrd.RowHeadersWidth = 51;
             this.RecordTable_dtgrd.RowTemplate.Height = 29;
             this.RecordTable_dtgrd.Size = new System.Drawing.Size(554, 188);

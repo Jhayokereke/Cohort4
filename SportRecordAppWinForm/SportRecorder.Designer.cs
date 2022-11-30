@@ -59,7 +59,7 @@
             // 
             this.SportName_txtbx.Location = new System.Drawing.Point(73, 31);
             this.SportName_txtbx.Name = "SportName_txtbx";
-            this.SportName_txtbx.PlaceholderText = "e.g. Volleyball";
+            this.SportName_txtbx.PlaceholderText = "e.g. Long Jump";
             this.SportName_txtbx.Size = new System.Drawing.Size(437, 27);
             this.SportName_txtbx.TabIndex = 0;
             // 
@@ -83,6 +83,7 @@
             this.WinnerTag_txtbx.Name = "WinnerTag_txtbx";
             this.WinnerTag_txtbx.Size = new System.Drawing.Size(437, 27);
             this.WinnerTag_txtbx.TabIndex = 3;
+            this.WinnerTag_txtbx.TextChanged += new System.EventHandler(this.WinnerTag_txtbx_TextChanged);
             // 
             // FRunnerName_txtbx
             // 
@@ -104,6 +105,7 @@
             this.FRunnerTag_txtbx.Name = "FRunnerTag_txtbx";
             this.FRunnerTag_txtbx.Size = new System.Drawing.Size(437, 27);
             this.FRunnerTag_txtbx.TabIndex = 6;
+            this.FRunnerTag_txtbx.TextChanged += new System.EventHandler(this.FRunnerTag_txtbx_TextChanged);
             // 
             // SRunnerName_txtbx
             // 
@@ -125,6 +127,7 @@
             this.SRunnerTag_txtbx.Name = "SRunnerTag_txtbx";
             this.SRunnerTag_txtbx.Size = new System.Drawing.Size(437, 27);
             this.SRunnerTag_txtbx.TabIndex = 9;
+            this.SRunnerTag_txtbx.TextChanged += new System.EventHandler(this.SRunnerTag_txtbx_TextChanged);
             // 
             // label6
             // 

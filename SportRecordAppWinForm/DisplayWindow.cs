@@ -13,15 +13,25 @@ namespace SportRecordAppWinForm
 {
     public partial class DisplayWindow : Form
     {
-        public DisplayWindow(List<SportRecord> records)
+        private SportRecorder Recorder;
+        private DataTable table;
+
+        public DisplayWindow(SportRecorder recorder)
         {
             InitializeComponent();
-            DataTable table = new DataTable();
+            
+
+            Recorder = recorder;
+            Recorder.OnUpdated += Recorder_OnUpdated;
+        }
+
+        private void Recorder_OnUpdated(List<SportRecord> records)
+        {
+            table = new DataTable();
             table.Columns.Add("Sport");
             table.Columns.Add("Winner", typeof(string));
             table.Columns.Add("First Runner Up", typeof(string));
             table.Columns.Add("Second Runner Up", typeof(string));
-
             foreach (SportRecord record in records)
             {
                 table.Rows.Add(record.SportCategory, record.FirstPosition, record.SecondPosition, record.ThirdPosition);
@@ -29,6 +39,5 @@ namespace SportRecordAppWinForm
 
             RecordTable_dtgrd.DataSource = table;
         }
-
     }
 }
