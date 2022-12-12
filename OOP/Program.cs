@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace OOP
 {
@@ -9,34 +10,41 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            SortedSet<int> set = new SortedSet<int>();
-            set.Add(5);
-            set.Add(2);
-            set.Add(3);
-            set.Add(6);
-            set.Add(1);
-            set.Add(4);
-            set.Add(5);
+            Console.WriteLine("Executing main thread...");
 
-            Console.WriteLine(set.Count);
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
 
-            Console.WriteLine("[" + string.Join(", ", set) + "]");
+            Thread childThread = new Thread(CreateNewUser);
+            childThread.Start(name);
 
-            var newSet = set.Where(GreaterThan);
-            Console.WriteLine(newSet.Count());
+            Console.WriteLine("Welcome {{{0}}}", name);
         }
 
-        static bool GreaterThan(int x)
+        static void CreateNewUser(object username)
         {
-            return x > 5;
+            string name = (string)username;
+            Thread.Sleep(3000);
+            Console.WriteLine("New user created {{{0}}}", name);
+        }
+
+        static void LongRunningTask(object thread)
+        {
+            string name = (string)thread;
+            for (int i = 5; i > -1; i--)
+            {
+                Console.WriteLine("Running on {0}: {1}", name, i);
+                Thread.Sleep(1000);
+            }
+        }
+
+        static void AnotherLongRunningTask()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                Console.WriteLine("Running on thread 2: "+i);
+                Thread.Sleep(100);
+            }
         }
     }
 }
-//1, 2, 3,4 ,5 ,6 ,7
-//Arrays => type safe, do not change size
-//arraylist => not type safe, change size
-//Lists => type safe, change size
-//hashtable => k:v
-//dictionaries => 
-//hashsets => 
-//sortedsets =>
