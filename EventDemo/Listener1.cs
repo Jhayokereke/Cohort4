@@ -23,18 +23,34 @@ namespace EventDemo
             Level_pgb.Increment(-1);
         }
 
-        public void Form_OnChargingStarted()
+        public async void Form_OnChargingStarted()
         {
-            for (int i = 0; i < 100; i++)
+            bool charging;
+            do
             {
+                charging = await AddOneBar(Level_pgb);
+
                 Level_pgb.Increment(1);
-                Thread.Sleep(100);
-                if (Level_pgb.Value == Level_pgb.Maximum)
-                {
-                    OnChargingCompleted?.Invoke(this, new EventArgs());
-                    break;
-                }
             }
+            while (charging);
+
+            OnChargingCompleted?.Invoke(this, new EventArgs());
+        }
+
+        public async Task<bool> AddOneBar(ProgressBar bar)
+        {
+            return await Task.Run(() =>
+            {
+                if (bar.Value == bar.Maximum)
+                {
+                    return false;
+                }
+                else
+                {
+                    Thread.Sleep(1000);
+                    return true;
+                }
+            });
         }
     }
 }
