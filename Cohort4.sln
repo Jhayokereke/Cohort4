@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventDemo", "EventDemo\Even
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandlingDemo", "ExceptionHandlingDemo\ExceptionHandlingDemo.csproj", "{94067322-F439-40B3-A9E0-A747AAB30E12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput", "InputOutput\InputOutput.csproj", "{3A18E3E9-4B14-4E74-9701-3B08E9587D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputOutput", "InputOutput\InputOutput.csproj", "{3A18E3E9-4B14-4E74-9701-3B08E9587D8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqDemo", "LinqDemo\LinqDemo.csproj", "{198B7F79-DA4E-48E7-B1E5-A0AE2F51A4B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{3A18E3E9-4B14-4E74-9701-3B08E9587D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A18E3E9-4B14-4E74-9701-3B08E9587D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A18E3E9-4B14-4E74-9701-3B08E9587D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198B7F79-DA4E-48E7-B1E5-A0AE2F51A4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198B7F79-DA4E-48E7-B1E5-A0AE2F51A4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198B7F79-DA4E-48E7-B1E5-A0AE2F51A4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198B7F79-DA4E-48E7-B1E5-A0AE2F51A4B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
