@@ -10,6 +10,7 @@ namespace EventDemo
             InitializeComponent();
             Listener1 listener1 = new Listener1();
             Listener2 listener2 = new Listener2(listener1);
+            CSVWriter writer = new(this);
             this.OnChargingStarted += listener2.Form_OnTrigger;
             this.OnChargingStarted += listener1.Form_OnChargingStarted;
             OnDischarge += listener1.Form_OnDischarge;
