@@ -38,7 +38,8 @@ Console.WriteLine();
 
 patients.Add(new Patient { Id = 006, Name = "Caleb", IsVaccinated = true, HasHMO = true, Type = PatientType.Out_Patient });
 
-var query1 = query.FirstOrDefault(p => p.Id > 5);
+var query1 = (from p in query where p.Name.Contains('s') select p).FirstOrDefault();
+var query1A = query.FirstOrDefault(p => p.Name.Contains('s'));
 
 var query2 = query.Where(p => p.HasHMO);
 
