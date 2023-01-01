@@ -8,6 +8,7 @@
         public string Lastname { get; set; }
         public int GenderId { get; set; } //ForeignKey to the Gender table
         public int StateId { get; set; } //ForeignKey to the States Table
+        public bool HasGraduated { get; set; }
 
         //Navigational properties
         public Gender Gender { get; set; }
@@ -41,5 +42,6 @@
     {
         public int Id { get; set; }
         public string Number { get; set; }
+        public string DotnetFellowId { get; set; }
     }
 }
